@@ -284,7 +284,7 @@ export default function RepositoryDashboard() {
                   <button
                     key={repo.name}
                     onClick={() => setSelectedRepo(repo.name)}
-                    className={classnames(
+                    className={cn(
     "focus:outline-none focus-visible:bg-gray-100 dark:focus-visible:bg-gray-700",
     "cursor-pointer select-none",
     selectedRepo === repo.name ? "bg-gray-100 dark:bg-gray-700" : ""
