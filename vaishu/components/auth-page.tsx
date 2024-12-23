@@ -5,7 +5,6 @@ import { Card } from "@/components/ui/card"
 import { LuKeyRound } from "react-icons/lu"
 import { useState } from 'react'
 import { cn } from "@/lib/utils"
-import { ThemeToggle } from "@/components/theme-toggle"
 import { FloatingThemeToggle } from "@/components/floating-theme-toggle"
 
 export default function AuthPage() {
