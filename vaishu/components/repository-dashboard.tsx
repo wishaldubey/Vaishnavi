@@ -289,8 +289,10 @@ export default function RepositoryDashboard() {
                       "hover:bg-gray-100 active:bg-gray-100 dark:hover:bg-gray-700 dark:active:bg-gray-700",
                       "focus:outline-none focus-visible:bg-gray-100 dark:focus-visible:bg-gray-700",
                       "cursor-pointer select-none",
-                      typeof selectedRepo === "string" && selectedRepo === repo.name && "bg-gray-100 dark:bg-gray-700"                    )}
-                  >
+                  (typeof selectedRepo === "string" && selectedRepo === repo.name) 
+  ? "bg-gray-100 dark:bg-gray-700" 
+  : ""
+                      >
                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-2">
                       <div className="flex items-center gap-2">
                         <span className="font-medium">{repo.name}</span>
