@@ -14,7 +14,6 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { useRouter } from "next/navigation"
-import { ThemeToggle } from "@/components/theme-toggle"
 import { FloatingThemeToggle } from "@/components/floating-theme-toggle"
 
 const cn = (...inputs: string[]) => twMerge(inputs)
