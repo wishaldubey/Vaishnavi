@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { useRouter } from "next/navigation"
+import { ThemeToggle } from "@/components/theme-toggle"
 import { FloatingThemeToggle } from "@/components/floating-theme-toggle"
 
 const cn = (...inputs: string[]) => twMerge(inputs)
@@ -285,10 +286,12 @@ export default function RepositoryDashboard() {
                     key={repo.name}
                     onClick={() => setSelectedRepo(repo.name)}
                     className={cn(
-    "focus:outline-none focus-visible:bg-gray-100 dark:focus-visible:bg-gray-700",
-    "cursor-pointer select-none",
-    selectedRepo === repo.name ? "bg-gray-100 dark:bg-gray-700" : ""
-)}
+                      "w-full text-left px-6 md:px-8 py-4 transition-colors",
+                      "hover:bg-gray-100 active:bg-gray-100 dark:hover:bg-gray-700 dark:active:bg-gray-700",
+                      "focus:outline-none focus-visible:bg-gray-100 dark:focus-visible:bg-gray-700",
+                      "cursor-pointer select-none",
+                      selectedRepo === repo.name && "bg-gray-100 dark:bg-gray-700"
+                    )}
                   >
                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-2">
                       <div className="flex items-center gap-2">
