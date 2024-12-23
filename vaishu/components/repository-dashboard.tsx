@@ -6,7 +6,7 @@ const cn = (...inputs: string[]) => twMerge(inputs)
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Cloud, Code2, FolderGit2, HelpCircle, LogOut, RefreshCcw, Settings, FlagIcon as SupportIcon, ChevronDown, Menu, Search, X } from 'lucide-react'
+import { Cloud, Code2, FolderGit2, HelpCircle, LogOut, RefreshCcw, Settings, FlagIcon as SupportIcon, ChevronDown, Menu, Search} from 'lucide-react'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -14,8 +14,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import Link from "next/link"
-import { useRouter } from "next/navigation"
+
 
 interface Repository {
   name: string
@@ -26,7 +25,7 @@ interface Repository {
 }
 
 export default function RepositoryDashboard() {
-  const router = useRouter()
+  
   const [searchQuery, setSearchQuery] = useState("")
   const [selectedRepo, setSelectedRepo] = useState<string | null>(null)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
