@@ -291,7 +291,9 @@ export default function RepositoryDashboard() {
   "cursor-pointer select-none",
   selectedRepo === repo.name && typeof selectedRepo === "string" 
     ? "bg-gray-100 dark:bg-gray-700" 
-    : "" >
+    : ""
+                    )}
+                  >
                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-2">
                       <div className="flex items-center gap-2">
                         <span className="font-medium">{repo.name}</span>
@@ -327,4 +329,3 @@ export default function RepositoryDashboard() {
     </div>
   )
 }
-
