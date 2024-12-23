@@ -6,8 +6,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "CodeAnt AI",
-  description: "AI to Detect & Autofix Bad Code",
+  title: "Codeant Assignment",
+  description: "Vaishnavi Waghmare",
 }
 
 export default function RootLayout({
