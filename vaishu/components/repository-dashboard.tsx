@@ -261,7 +261,7 @@ export default function RepositoryDashboard() {
                       "bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
                     )}
                   >
-                    Add Repository
+                    + Add Repository
                   </Button>
                 </div>
               </div>
